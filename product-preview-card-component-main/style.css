@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root{
+    --font-family: 'Montserat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image{
+    max-height: 460px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    max-height: 100vh;
+    width: auto;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 200px;
+    font-family: var(--font-family);
+    background-color: hsl(30, 38%, 92%);
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.info{
+    padding: 0 20px;
+
+}
+
+.perfume{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.prf{
+    font-size: 11px;
+    font-weight: bold;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+}
+
+h1{
+    color: hsl(212, 21%, 14%);
+    font-family:var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.floral{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: hsl(228, 12%, 48%);
+    margin: 15px 0;
+}
+
+.prices{
+    display: flex;
+}
+
+.new-price{
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price{
+    margin-left: auto;
+    padding: 12px 0;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+}
+
+.button{
+    margin: 20px 0;
+}
+
+.cart{
+    height: 16px;
+    padding: 0 5px;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 0 35px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+}
+
+@media screen and (width: 375px) {
+
+    .image{
+        height: 250px;
+        display: inline;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .info{
+        margin-top: 200px;
+        padding-bottom: 10px;
+    }
+}
